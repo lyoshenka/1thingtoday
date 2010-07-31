@@ -25,22 +25,6 @@
   	<meta name="viewport" content="width=575"/>
   	<link rel="apple-touch-icon" href="{PortraitURL-128}"/>
   
-  
-  	<!-- DEFAULT COLORS -->
-  	<meta name="text:Big Title Size" content="110" />
-  	<meta name="color:Background" content="#eee" />
-  	<meta name="color:Text" content="#333" />
-  	<meta name="font:Body" content="'Helvetica Neue', Helvetica, Arial, Verdana, Sans-Serif" />
-  	<meta name="font:Article" content="Constantia, Cambria, Palatino, 'Palatino Linotype', Georgia, serif" />
-  	<meta name="color:Link" content="#033654"/>
-  	<meta name="color:Description" content="#5A5A5A" />
-  	<meta name="color:Title" content="#282828"/>
-  	<meta name="color:Article Text" content="#001A2B" />
-  	<meta name="color:Meta Link" content="#777" />
-  	<meta name="color:Text Title" content="#3F5403" />
-  	<meta name="color:Link Title" content="#CF741E" />
-  	<!-- END DEFAULT COLORS -->
-  
   	<style type="text/css" media="all">
 
     	/************
@@ -77,8 +61,8 @@
 
     body { 
 		background-color: #eee; 
-		color: {color:Text}; 
-		font-family: {font:Body}; 
+		color: #333; 
+		font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, Sans-Serif; 
 		font-size: 17px;
 	}
 	
@@ -100,10 +84,10 @@
     h1, h2, h3, h4, h5, h6 { font-weight: bold; }
     h2 { font-size: 32px; line-height: 44px; margin: 0 0 12px 0; }
 
-    header h1 { font-family: ChunkFiveRegular, 'Rockwell Extra Bold', 'Arial Black', Arial, sans-serif; font-size: {text:Big Title Size}px; font-weight: bold; }
-    header h1 a:link, header h1 a:visited { color: {color:Title}; text-shadow: white 1px 1px 0px; }
+    header h1 { font-family: ChunkFiveRegular, 'Rockwell Extra Bold', 'Arial Black', Arial, sans-serif; font-size: 110px; font-weight: bold; }
+    header h1 a:link, header h1 a:visited { color: #282828; text-shadow: white 1px 1px 0px; }
     header h1 a:hover, header h1 a:active { background-color: transparent; opacity: 0.8; }
-    header p.description { color: {color:Description}; font-size: 14px; line-height: 22px; margin: 25px 0 0 0; }
+    header p.description { color: #5A5A5A; font-size: 14px; line-height: 22px; margin: 25px 0 0 0; }
     header nav { margin: 0 0 20px 0;}
     header nav ul { line-height: 22px; list-style: none; margin: 44px 0 6px 0; }
     header nav ul li { font-size: 14px; float: left; }
@@ -114,7 +98,7 @@
     	border-radius: 15px;
     	-webkit-border-radius: 15px;
     	-moz-border-radius: 15px; }
-    #search-box:focus { background-color: white; color: {color:Text}; }
+    #search-box:focus { background-color: white; color: #333; }
     #search-submit { position: absolute; right: 8px; top: 4px; }
 
     h2.page-title { font-weight: normal; margin: 22px 0 22px 0; text-shadow: white 1px 1px 0px; }
@@ -125,7 +109,7 @@
     p.entry-date span.day { padding: 0 8px 0 0; }
     p.entry-date span.year { padding: 0 8px 0 0; }
 
-    article { background: #FEF7EE url('http://static.tumblr.com/leqzobw/kgUkukq3z/paper.jpg') repeat; color: {color:Article Text}; font-family: {font:Article}; margin: 22px 0; padding: 44px; position: relative; text-shadow: white 1px 1px 0; overflow: hidden; }
+    article { background: #FEF7EE url('http://static.tumblr.com/leqzobw/kgUkukq3z/paper.jpg') repeat; color: #001A2B; font-family: Constantia, Cambria, Palatino, 'Palatino Linotype', Georgia, serif; margin: 22px 0; padding: 44px; position: relative; text-shadow: white 1px 1px 0; overflow: hidden; }
     article, div#pagination a { box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
     -webkit-box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
     -moz-box-shadow: 3px 3px 7px rgba(0,0,0,0.3); } /* .boxshadow article, .boxshadow div#pagination a, */
@@ -134,19 +118,19 @@
     article a:link, article a:visited { border-bottom: 1px solid #bbb; }
     article a:hover, article a:active { text-shadow: rgba(0,0,0,0.5) 1px 1px 0; }
     article p.entry-meta { font-size: 13px; margin: 0; }
-    article p.entry-meta a { border: 0; color: {color:Meta Link}; margin: 0 10px 0 0; }
+    article p.entry-meta a { border: 0; color: #777; margin: 0 10px 0 0; }
     article p.entry-meta a:hover, article p.entry-meta a:active { text-shadow: white 1px 1px 0; }
     article p.entry-meta a:hover { background-color: #ddd; }
     article p.entry-meta span.tags a { line-height: 22px; opacity: 0.5; }
     article p.entry-meta span.tags a:hover { opacity: 1; }
-    article p.entry-meta span.tags a strong { color: {color:Text}; font-weight: normal; }
+    article p.entry-meta span.tags a strong { color: #333; font-weight: normal; }
 
     article ol, article ul { list-style-position: inside; margin: 0 0 22px 20px; }
 
-    article h2, article p.entry-meta { font-family: {font:Body}; }
+    article h2, article p.entry-meta { font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, Sans-Serif; }
 
-    article.regular h2 { color: {color:Text Title}; }
-    article.link h2 a { border-bottom: 1px solid transparent; color: {color:Link Title}; border: 0; }
+    article.regular h2 { color: #3F5403; }
+    article.link h2 a { border-bottom: 1px solid transparent; color: #CF741E; border: 0; }
     article.link h2 a:hover { background-color: transparent; border-bottom: 1px dashed #999; text-shadow: white 1px 1px 0; }
     article.link h2 a span.arrow { color: #666; display: none; margin: 0 0 0 8px; }
     article.link h2 a:hover span.arrow { display: inline; }
@@ -533,7 +517,7 @@
     
     
      		<footer>
-        		<p>1 Thing Today's theme is <a href="http://github.com/belucid/1thingtoday">available here</a> and was originally designed by <a href="http://kevinholesh.com/" title="Web Designer Extraordinaire">Kevin Holesh</a>.</p>       
+        		<p>1 Thing Today's theme is <a href="http://github.com/belucid/1thingtoday">available here</a> and was originally designed by <a href="http://kevinholesh.com/" title="Web Designer">Kevin Holesh</a>.</p>       
       		</footer>
       
       
