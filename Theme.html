@@ -132,7 +132,7 @@
     article.regular h2 { color: #3F5403; }
     article.link h2 a { border-bottom: 1px solid transparent; color: #CF741E; border: 0; }
     article.link h2 a:hover { background-color: transparent; border-bottom: 1px dashed #999; text-shadow: white 1px 1px 0; }
-    article.link h2 a span.arrow { color: #666; display: inline; margin: 0 0 0 8px; }
+    article.link h2 a span.arrow { color: #666; display: inline;}
 
     article.photo p.image a { border: 0; }
     article.photo p.image a img { border: 1px solid #DBD5D0; padding: 7px; }
@@ -208,7 +208,7 @@
            			<li><a href="http://blog.snootymonkey.com" title="The Snooty Monkey Blog">Monkey Opus</a></li>
            			<li class="bull">&bull;</li>
 
-           			<li><a href="http://blog.bubbletimer.com" title="The BubbleTimer Blog">Being & Time</a></li>
+           			<li><a href="http://blog.bubbletimer.com" title="The BubbleTimer Blog">Being &amp; Time</a></li>
            			<li class="bull">&bull;</li>
 
            			<li><a href="http://digestedwords.com" title="My thoughts on the books I'm reading">Digested Words</a></li>
@@ -225,7 +225,7 @@
         
        		<h1><a href="/">{Title}</a></h1>
        		{block:Description}
-         			<p class="description">{Description}</p>
+         		<p class="description">{Description}</p>
        		{/block:Description}
        
     	</header>
@@ -368,7 +368,7 @@
 	        	{block:Link}
 	        		<article class="hentry link">
 	          			<h2 class="entry-title">
-							<a href="{URL}" {Target}>{Name}<span class="arrow">&rarr;</span></a>
+							<a href="{URL}" {Target}><span class="arrow">&rarr;</span> {Name}</a>
 						</h2>
         
 	          			{block:Description}
