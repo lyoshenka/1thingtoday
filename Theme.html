@@ -8,10 +8,10 @@
 -->
 <head>
     <title>{block:PostTitle}{PostTitle} | {/block:PostTitle}{Title}</title>
-  	<meta name="description" content="{MetaDescription}" />
+      <meta name="description" content="{MetaDescription}" />
   
-  	<script type="text/javascript">
-    	function clearField(field_id, term_to_clear) {
+      <script type="text/javascript">
+        function clearField(field_id, term_to_clear) {
       		if (document.getElementById(field_id).value == term_to_clear ) {
         		document.getElementById(field_id).value ='';
       		}
@@ -76,8 +76,8 @@
     .clear { clear: both; height: 0px; }
 
 	a { padding: 0 2px;}
-    a:link, a:visited { color: #033654; text-decoration: none; }
-    a:hover, a:active { background-color: #033654; color: white; }
+    a:link, a:visited { color: black; text-decoration: none; }
+    a:hover, a:active { background-color: black; color: white; }
 
     p, ol, ul { line-height: 1.7em; margin: 1.2em 0; color: 
 #080000; font-family: Georgia, "Times New Roman", serif; font-size: 1.2em;}
@@ -117,10 +117,11 @@
     .no-boxshadow article, .no-boxshadow div#pagination a { border-right: 3px solid #bbb; border-bottom: 3px solid #bbb; }
 
 
-    .entry-title a:link, .entry-title a:visited { border-bottom: 1px solid #bbb !important; font-size: 1.7em !important; font-weight: 600 !important; line-height: 1.2 !important; font-family: Georgia, "Times New Roman", serif !important; }
+    .entry-title a:hover, .entry-title a:active {color: white !important}
+    .entry-title a:link, .entry-title a:visited { border-bottom: none !important; font-size: 1.7em !important; font-weight: 600 !important; line-height: 1.2 !important; font-family: Georgia, "Times New Roman", serif !important;}
 
     article a:link, article a:visited { border-bottom: 1px solid #bbb;}
-    article a:hover, article a:active { text-shadow: rgba(0,0,0,0.5) 1px 1px 0; }
+    article a:hover, article a:active { text-shadow: rgba(0,0,0,0.5) 1px 1px 0;}
     article p.entry-meta { font-size: 13px; margin: 0; }
     article p.entry-meta a { border: 0; color: #777; margin: 0 10px 0 0; }
     article p.entry-meta a:hover, article p.entry-meta a:active { text-shadow: white 1px 1px 0; }
@@ -284,6 +285,7 @@
 	              					{/block:Tags}
 	            				</span>
 	            			{/block:HasTags}
+                            <div style="font-size: 10px; text-align: left;"><a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments</a></div>
 	          			</p>
 	        		</article>
 	        	{/block:Quote}
@@ -308,6 +310,7 @@
 	              					{/block:Tags}
 	            				</span>
 	            			{/block:HasTags}
+                            <div style="font-size: 10px; text-align: left;"><a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments</a></div>
 	          			</p>
 	        		</article>
 	        	{/block:Text}
@@ -337,6 +340,7 @@
 	              					{/block:Tags}
 	            				</span>
 	            			{/block:HasTags}
+                            <div style="font-size: 10px; text-align: left;"><a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments</a></div>
 	          			</p>
 	        		</article>
 	        	{/block:Photo}
@@ -363,6 +367,7 @@
 	              					{/block:Tags}
 	            				</span>
 	            			{/block:HasTags}
+                            <div style="font-size: 10px; text-align: left;"><a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments</a></div>
 	          			</p>
 	        		</article>
 	        	{/block:Photoset}
@@ -389,6 +394,7 @@
 	              					{/block:Tags}
 	            				</span>
 	            			{/block:HasTags}
+                            <div style="font-size: 10px; text-align: left;"><a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments</a></div>
 	          			</p>
 	        		</article>
 	        	{/block:Link}
@@ -422,6 +428,7 @@
 	              					{/block:Tags}
 	            				</span>
 	            			{/block:HasTags}
+                            <div style="font-size: 10px; text-align: left;"><a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments</a></div>
 	          			</p>
 	        		</article>
 	        	{/block:Chat}
@@ -454,6 +461,7 @@
 		              				{/block:Tags}
 		            			</span>
 		            		{/block:HasTags}
+                            <div style="font-size: 10px; text-align: left;"><a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments</a></div>
 		          		</p>
 		        	</article>
 		        {/block:Audio}
@@ -480,6 +488,7 @@
 	              					{/block:Tags}
 	            				</span>
 	            			{/block:HasTags}
+                            <div style="font-size: 10px; text-align: left;"><a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments</a></div>
 	          			</p>
 	        		</article>
 	        	{/block:Video}
@@ -487,8 +496,6 @@
 	        	<div id="notes">
 	          		{PostNotes}
 	        	</div>
-
-<div style="font-size: 10px; text-align: left;"><a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments</a></div>
 
 			{/block:Posts}
     		 
